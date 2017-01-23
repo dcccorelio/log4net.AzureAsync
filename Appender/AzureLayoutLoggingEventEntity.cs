@@ -22,6 +22,7 @@ namespace log4net.Appender.AzureAsync
 
             PartitionKey = e.MakePartitionKey(partitionKeyType);
             RowKey = e.MakeRowKey();
+            LoggerName = e.LoggerName;
             SequenceNumber = 0;
         }
 
@@ -38,6 +39,8 @@ namespace log4net.Appender.AzureAsync
         public string Level { get; set; }
 
         public string Message { get; set; }
+
+        public string LoggerName { get; set; }
 
         public int SequenceNumber { get; set; }
     }
