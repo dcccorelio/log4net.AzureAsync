@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
+    <id>log4net.Appender.AzureAsync</id>
     <version>$version$</version>
-    <title>$title$</title>
+    <title>log4net.Appender.AzureAsync</title>
     <authors>stemarie,jorupp</authors>
     <projectUrl>http://jorupp.github.com/log4net.AzureAsync</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
