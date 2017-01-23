@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace log4net.Azure.console
+namespace log4net.Appender.AzureAsync.console
 {
     class Program
     {

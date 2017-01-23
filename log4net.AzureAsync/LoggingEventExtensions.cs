@@ -1,7 +1,7 @@
 using System;
 using log4net.Core;
 
-namespace log4net.Appender
+namespace log4net.Appender.AzureAsync
 {
     internal static class LoggingEventExtensions
     {

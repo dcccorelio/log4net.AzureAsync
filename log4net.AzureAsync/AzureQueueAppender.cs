@@ -1,18 +1,12 @@
-﻿using log4net.Appender.Language;
+﻿using System;
+using System.Threading.Tasks;
+using log4net.Appender.AzureAsync.Language;
 using log4net.Core;
 using log4net.Layout;
-using Microsoft.Azure;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Queue;
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
-namespace log4net.Appender
+namespace log4net.Appender.AzureAsync
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="AzureQueueAppender" /> class.

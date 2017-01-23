@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Dynamic;
-using log4net.Appender.Language;
+using log4net.Appender.AzureAsync.Language;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Table;
 
-namespace log4net.Appender
+namespace log4net.Appender.AzureAsync
 {
 	/// <summary>
 	/// copied from here:

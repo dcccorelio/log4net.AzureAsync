@@ -5,9 +5,9 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.Appender.AzureAsync", "log4net.AzureAsync\log4net.Appender.AzureAsync.csproj", "{75570697-D850-47A4-96F6-9A79BF5FCACF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.AzureAsync.Tests", "log4net.AzureAsync.Tests\log4net.AzureAsync.Tests.csproj", "{55A7FCFD-F176-4294-9098-0C66416E0DC6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.Appender.AzureAsync.Tests", "log4net.AzureAsync.Tests\log4net.Appender.AzureAsync.Tests.csproj", "{55A7FCFD-F176-4294-9098-0C66416E0DC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.AzureAsync.console", "log4net.AzureAsync.console\log4net.AzureAsync.console.csproj", "{4E2AC9F0-D265-46FE-A8DA-A7CB8AD47867}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.Appender.AzureAsync.console", "log4net.AzureAsync.console\log4net.Appender.AzureAsync.console.csproj", "{4E2AC9F0-D265-46FE-A8DA-A7CB8AD47867}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{2B5EB03C-31F9-4625-94B1-FFBF67E1B960}"
 	ProjectSection(SolutionItems) = preProject

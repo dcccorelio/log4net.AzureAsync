@@ -1,10 +1,9 @@
 using System;
-using log4net.Appender;
 using log4net.Core;
 using log4net.Util;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace log4net.Azure.Tests
+namespace log4net.Appender.AzureAsync.Tests
 {
     [TestClass]
     public class UnitTestAzureDynamicTableAppender

@@ -6,8 +6,8 @@
     <ProjectGuid>{55A7FCFD-F176-4294-9098-0C66416E0DC6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>log4net.Azure.Tests</RootNamespace>
-    <AssemblyName>log4net.Azure.Tests</AssemblyName>
+    <RootNamespace>log4net.Appender.AzureAsync.Tests</RootNamespace>
+    <AssemblyName>log4net.Appender.AzureAsync.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -103,9 +103,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\log4net.Azure\log4net.Appender.Azure.csproj">
+    <ProjectReference Include="..\log4net.AzureAsync\log4net.Appender.AzureAsync.csproj">
       <Project>{75570697-d850-47a4-96f6-9a79bf5fcacf}</Project>
-      <Name>log4net.Appender.Azure</Name>
+      <Name>log4net.Appender.AzureAsync</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

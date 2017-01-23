@@ -1,12 +1,12 @@
-using log4net.Appender.Extensions;
-using log4net.Appender.Language;
+using System;
+using System.Linq;
+using log4net.Appender.AzureAsync.Extensions;
+using log4net.Appender.AzureAsync.Language;
 using log4net.Core;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Table;
-using System;
-using System.Linq;
 
-namespace log4net.Appender
+namespace log4net.Appender.AzureAsync
 {
     public class AzureTableAppender : BufferingAppenderSkeleton
     {

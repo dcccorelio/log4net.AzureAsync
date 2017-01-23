@@ -1,13 +1,9 @@
-﻿using log4net.Appender.Language;
-using Microsoft.Azure;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using log4net.Appender.AzureAsync.Language;
+using Microsoft.Azure;
 
-namespace log4net.Appender
+namespace log4net.Appender.AzureAsync
 {
     public static class Util
     {

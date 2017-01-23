@@ -7,8 +7,8 @@
     <ProjectGuid>{75570697-D850-47A4-96F6-9A79BF5FCACF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>log4net.Appender</RootNamespace>
-    <AssemblyName>log4net.Appender.Azure</AssemblyName>
+    <RootNamespace>log4net.Appender.AzureAsync</RootNamespace>
+    <AssemblyName>log4net.Appender.AzureAsync</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
