@@ -65,6 +65,7 @@ local.properties
 
 ## TODO: If you have NuGet Package Restore enabled, uncomment this
 packages/
+!packages/repositories.config
 
 # Visual C++ cache files
 ipch/
@@ -164,3 +165,4 @@ pip-log.txt
 
 #NuGet exe
 .nuget/NuGet.exe
+/packages
