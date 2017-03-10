@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>log4net.Appender.AzureAsync</id>
+    <id>MH.log4net.Appender.AzureAsync</id>
     <version>$version$</version>
-    <title>log4net.Appender.AzureAsync</title>
-    <authors>stemarie,jorupp</authors>
-    <projectUrl>http://jorupp.github.com/log4net.AzureAsync</projectUrl>
+    <title>MH.log4net.Appender.AzureAsync</title>
+    <authors>mediahuis</authors>
+    <projectUrl>https://github.com/dcccorelio/log4net.AzureAsync</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>log4net Appenders for Azure Table and Blob support, some with Async support</description>
-	<copyright>(c) 2012-2016 Karell Ste-Marie</copyright>
+    <description>Fork of http://jorupp.github.com/log4net.AzureAsync with downgrade to log4net version 1.2.10</description>
+	<copyright>(c) Mediahuis</copyright>
 	<dependencies>
 		<group targetFramework=".NETFramework4.5">
-			<dependency id="log4net" version="2.0.3" />
+			<dependency id="log4net" version="1.2.10" />
 			<dependency id="WindowsAzure.Storage" version="6.1.0" />
 			<dependency id="Microsoft.WindowsAzure.ConfigurationManager" version="3.1.0" />
 		</group>
