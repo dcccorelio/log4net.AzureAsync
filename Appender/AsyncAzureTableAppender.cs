@@ -64,7 +64,7 @@ namespace log4net.Appender.AzureAsync
                 {
                     var sw = System.Diagnostics.Stopwatch.StartNew();
                     await Table.ExecuteBatchAsync(batchOperation);
-                    LogLog.Debug(typeof(AsyncAzureTableAppender), string.Format("Sent batch of {0} in {1}", batchOperation.Count, sw.Elapsed));
+                    LogLog.Debug(string.Format("Sent batch of {0} in {1}", batchOperation.Count, sw.Elapsed));
                     return;
                 }
                 catch (Exception ex)
@@ -72,11 +72,11 @@ namespace log4net.Appender.AzureAsync
                     attempt++;
                     if (attempt >= RetryCount)
                     {
-                        LogLog.Error(typeof(AsyncAzureTableAppender), string.Format("Exception sending batch, aborting: {0}", ex.Message));
+                        LogLog.Error(string.Format("Exception sending batch, aborting: {0}", ex.Message));
                         return;
                     }
 
-                    LogLog.Warn(typeof(AsyncAzureTableAppender), string.Format("Exception sending batch, retrying: {0}", ex.Message));
+                    LogLog.Warn(string.Format("Exception sending batch, retrying: {0}", ex.Message));
 
                     // wait for a bit longer each time, and add a bit of randomness to make sure we're not retrying in lockstep
                     var wait = TimeSpan.FromSeconds(RetryWait.TotalSeconds * (attempt + GetExtraWaitModifier()));
@@ -99,14 +99,14 @@ namespace log4net.Appender.AzureAsync
 
             _autoFlushTimer = new Timer(s =>
             {
-                LogLog.Debug(typeof(AsyncAzureTableAppender), "Triggering flush");
+                LogLog.Debug("Triggering flush");
                 this.Flush(false);
             }, null, TimeSpan.FromSeconds(0), FlushInterval);
         }
 
         protected override void OnClose()
         {
-            LogLog.Debug(typeof(AsyncAzureTableAppender), "Closing");
+            LogLog.Debug("Closing");
             if (null != _autoFlushTimer)
             {
                 _autoFlushTimer.Dispose();
@@ -120,9 +120,9 @@ namespace log4net.Appender.AzureAsync
             {
                 tasks = _outstandingTasks.ToArray();
             }
-            LogLog.Debug(typeof(AsyncAzureTableAppender), string.Format("Waiting on {0} outstanding logging calls", tasks.Length));
+            LogLog.Debug(string.Format("Waiting on {0} outstanding logging calls", tasks.Length));
             Task.WaitAll(tasks);
-            LogLog.Debug(typeof(AsyncAzureTableAppender), "Completing close");
+            LogLog.Debug("Completing close");
         }
 
         private ITableEntity[] GetLogEntities(LoggingEvent @event)

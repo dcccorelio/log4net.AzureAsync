@@ -29,7 +29,6 @@ namespace log4net.Appender.AzureAsync
             FileName = e.LocationInformation.FileName;
             LineNumber = e.LocationInformation.LineNumber;
             MethodName = e.LocationInformation.MethodName;
-            StackFrames = e.LocationInformation.StackFrames;
 
             if (e.ExceptionObject != null)
             {
@@ -75,8 +74,6 @@ namespace log4net.Appender.AzureAsync
         public string LineNumber { get; set; }
 
         public string MethodName { get; set; }
-
-        public StackFrameItem[] StackFrames { get; set; }
 
         public string LoggerName { get; set; }
 
